@@ -1,4 +1,5 @@
-@font-face {font-family: "Pluto";
+@font-face {
+	font-family: "Pluto";
     src: url("https://db.onlinewebfonts.com/t/f0f5393a17b9542df826753e74d91869.eot"); /* IE9*/
     src: url("https://db.onlinewebfonts.com/t/f0f5393a17b9542df826753e74d91869.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("https://db.onlinewebfonts.com/t/f0f5393a17b9542df826753e74d91869.woff2") format("woff2"), /* chrome firefox */
@@ -7,7 +8,8 @@
     url("https://db.onlinewebfonts.com/t/f0f5393a17b9542df826753e74d91869.svg#Pluto") format("svg"); /* iOS 4.1- */
 }
 
-@font-face {font-family: "Pluto";
+@font-face {
+	font-family: "Pluto";
     src: url("https://db.onlinewebfonts.com/t/788819406d36491cb73c9f65ba29f980.eot"); /* IE9*/
     src: url("https://db.onlinewebfonts.com/t/788819406d36491cb73c9f65ba29f980.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("https://db.onlinewebfonts.com/t/788819406d36491cb73c9f65ba29f980.woff2") format("woff2"), /* chrome firefox */
@@ -73,7 +75,7 @@ body {
 }
 
 .logo {
-	margin: 50px 75px;
+	margin: 40px 75px;
     transition: transform 1.5s ease-in-out;
 }
 
@@ -129,4 +131,32 @@ a:link {
 .left::after, .main::after {
 	content: '';
 	clear: both;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.main {
+		display: none;
+	}
+	
+	.left, .seperator {
+		width: 100%;
+	}
+	
+	.left {
+		float: none;
+		border: none;
+	}
+	
+	.social {
+		margin-bottom: 25px;
+	}
+	
+	body {
+		overflow-y: scroll;
+		background-color: #FFCC01;
+		border-right: 5px solid black;
+	}
 }
