@@ -86,12 +86,6 @@ body {
 	height: 100vh;
 }
 
-.loader-slide {
-	z-index: 1000;
-	background: url("img/pattern.svg") center center repeat;
-	background-size: cover;
-}
-
 .slide, .loader-slide {
 	position: absolute;
 	height: 100%;
@@ -101,6 +95,19 @@ body {
 .slide > img {
 	max-height: 100%;
 	filter: saturate(75%);
+}
+
+.slide:not(:first-of-type) > img[data-loaded="true"]{
+	animation: fadeIn 5s;
+}
+
+.slide:first-of-type > img[data-loaded="true"] {
+	animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 .left::after, .main::after {
