@@ -1,5 +1,7 @@
 $(() => {
-	lozad().observe()
+	lozad(".lozad", {
+		loaded: (el) => { console.log(el) }
+	}).observe()
 	
 	let slideIndex = 0
 	function slider() {

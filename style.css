@@ -1,5 +1,21 @@
-@import url(https://db.onlinewebfonts.com/c/f0f5393a17b9542df826753e74d91869?family=Pluto);
-@import url(https://db.onlinewebfonts.com/c/788819406d36491cb73c9f65ba29f980?family=Pluto);
+@font-face {font-family: "Pluto";
+    src: url("https://db.onlinewebfonts.com/t/f0f5393a17b9542df826753e74d91869.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/f0f5393a17b9542df826753e74d91869.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/f0f5393a17b9542df826753e74d91869.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/f0f5393a17b9542df826753e74d91869.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/f0f5393a17b9542df826753e74d91869.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/f0f5393a17b9542df826753e74d91869.svg#Pluto") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Pluto";
+    src: url("https://db.onlinewebfonts.com/t/788819406d36491cb73c9f65ba29f980.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/788819406d36491cb73c9f65ba29f980.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/788819406d36491cb73c9f65ba29f980.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/788819406d36491cb73c9f65ba29f980.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/788819406d36491cb73c9f65ba29f980.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/788819406d36491cb73c9f65ba29f980.svg#Pluto") format("svg"); /* iOS 4.1- */
+}
+
 body {
 	display: block;
 	overflow: hidden;
