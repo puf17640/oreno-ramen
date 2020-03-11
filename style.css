@@ -86,8 +86,8 @@ body {
 }
 
 .logo {
-	max-width: 230px;
-	margin: 40px 75px;
+	width: 60%;
+	margin: 40px 20%;
 }
 
 .animate {
