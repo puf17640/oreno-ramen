@@ -75,6 +75,7 @@ body {
 }
 
 .logo {
+	max-width: 230px;
 	margin: 40px 75px;
 }
 
