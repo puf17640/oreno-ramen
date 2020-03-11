@@ -1,4 +1,11 @@
 $(() => {
+	$(".logo").on("animationend", (e) => {
+		$(e.target).removeClass("animate")
+	}).on("mouseenter", (e) => {
+		if(!$(e.target).hasClass("animate"))
+			$(e.target).addClass("animate")
+	})
+	
 	lozad().observe()
 	
 	let slideIndex = 0

@@ -76,11 +76,10 @@ body {
 
 .logo {
 	margin: 40px 75px;
-    transition: transform 1.5s ease-in-out;
 }
 
-.logo:hover {
-	transform: rotate(360deg);
+.animate {
+	animation: roll 1.5s ease-in-out;
 }
 
 .seperator {
@@ -102,6 +101,7 @@ body {
 }
 
 .slide > img {
+	min-height: 100%;
 	max-height: 100%;
 	filter: saturate(75%);
 }
@@ -112,6 +112,10 @@ body {
 	list-style-type: none;
 	margin: -15px 100px 0 100px;
     padding: 0;
+}
+
+.social i {
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.25);
 }
 
 a {
@@ -126,6 +130,11 @@ a:link {
 @keyframes fadeIn {
 	from { opacity: 0; }
 	to { opacity: 1; }
+}
+
+@keyframes roll {
+	from { transform: rotate(0deg) }
+	to { transform: rotate(360deg) }
 }
 
 .left::after, .main::after {
@@ -148,6 +157,10 @@ and (max-device-width : 480px) {
 	.left {
 		float: none;
 		border: none;
+	}
+	
+	.footer {
+		position: relative;
 	}
 	
 	.social {
