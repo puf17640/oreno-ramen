@@ -71,6 +71,7 @@ body {
 }
 
 .left {
+	z-index: 9999;
 	float: left;
 	width: 380px;
 	height: 100vh;
@@ -105,7 +106,7 @@ body {
 	height: 100vh;
 }
 
-.slide, .loader-slide {
+.slide {
 	position: absolute;
 	height: 100%;
 	width: 100%;
