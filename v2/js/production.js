@@ -1,6 +1,12 @@
 !(function() {
     window;
     const e = document.documentElement;
+    $(".logo").on("animationend", (e) => {
+		$(e.target).removeClass("animate")
+	}).on("mouseenter", (e) => {
+		if(!$(e.target).hasClass("animate"))
+			$(e.target).addClass("animate")
+	})
     if (
         (e.classList.remove("no-js"),
         e.classList.add("js"),
